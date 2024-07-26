@@ -1,0 +1,64 @@
+/*LinkedIn Button*/
+.custom-button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+.custom-button .fa-brands {
+    font-size: 40px; /* Adjust the font size to make the icon bigger */
+    color: #FFFFFF; /* Initial color */
+    transition: color 0.1s ease; /* Smooth transition for the color */
+}
+.custom-button:hover .fa-brands {
+    color: rgb(86, 116, 180); /* Change the icon color to blue on hover */
+}
+
+/*For paragraph text*/
+.paragraph {
+    font-size: 20px !important;
+}
+
+/*To hide sidebar*/
+[data-testid="collapsedControl"] {
+    display: none
+}
+/* To build project list */
+.row {
+    display: flex;
+    align-items: center;
+    padding: 12px; /* for row size */
+    margin: 10px; /* for gaps between rows */
+    border-radius: 5px;
+}
+.icon {
+    font-size: 32px;
+    margin-right: 10px;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-size: 20px;
+}
+.tools {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/*To adjust learn more button*/
+.divider {
+    margin: 35px 0; 
+}
+
+/*To seperate project lists*/
+.projectdiv {
+    border-top: 1px solid #676767a3; 
+    margin-top: 15px;  
+    margin-bottom: 15px;  
+}
+
