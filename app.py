@@ -60,7 +60,7 @@ with st.container():
         st.write("")
         st.markdown('''
                     <p class="paragraph">
-                    If you're here, then it means either my LinkedIn profile caught your attention, or that my resume passed the ATS. Anyway, welcome to my portfolio!   
+                    If you're here, then either my LinkedIn profile caught your attention, or that my resume passed the ATS. Anyway, welcome to my portfolio!   
                     <br>Check out my list of projects below! </br>
                     </p>
                     ''', unsafe_allow_html = True)
