@@ -37,11 +37,6 @@ def get_lottie(url):
 animation1 = get_lottie("https://lottie.host/f953eec0-8ae0-42d9-a367-cbcf62c3a048/Cja9RYcO4Q.json")
 animation2 = get_lottie("https://lottie.host/f6ca40d9-94eb-4400-b894-665f56d4b665/5OfYeb57Wz.json")
 
-# Side bar notice
-st.sidebar.title("""
-                 Loading...\n
-                 Plase do not click away.""")
-
 # Container 1: Introduction 
 with st.container():
     div1, pfp, div2, intro, div3 = st.columns(
@@ -65,7 +60,7 @@ with st.container():
         st.write("")
         st.markdown('''
                     <p class="paragraph">
-                    If you're here, then it means that my LinkedIn Profile caught your attention, or that my resume passed the ATS. Anyway,  welcome to my portfolio!   
+                    If you're here, then it means either my LinkedIn profile caught your attention, or that my resume passed the ATS. Anyway, welcome to my portfolio!   
                     <br>Check out my list of projects below! </br>
                     </p>
                     ''', unsafe_allow_html = True)
@@ -123,7 +118,7 @@ with st.container():
         st_lottie(animation1, width = 350)
         
 # Divider
-st.markdown('<div style="height: 50px;"></div>', unsafe_allow_html=True)
+st.markdown('<div style="height: 40px;"></div>', unsafe_allow_html=True)
 st.markdown("---")
 st.markdown('<div style="height: 25px;"></div>', unsafe_allow_html=True)
 
@@ -144,7 +139,7 @@ with st.container():
             options = ["Select all", "Python", "SQL", "Excel", "Power BI", "Tableau", "R"]
             # Create the select box
             selected_option = st.selectbox("x", options, label_visibility='hidden')
-            st.write(f"You selected: {selected_option}")
+            
             
             # Project details from projectcomponents.py
             if selected_option == "Select all":
