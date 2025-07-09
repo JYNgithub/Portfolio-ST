@@ -1,6 +1,0 @@
-[9/7/2025]
-- Tidied up the repo, reconfigured venv
-
-[Notes]
-- IIRC, any changes pushed to github will automatically change the website
-- And that any requirements are collected from the .txt during deployment
