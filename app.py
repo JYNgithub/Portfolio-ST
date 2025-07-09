@@ -1,7 +1,7 @@
 import requests
 import streamlit as st 
-import numpy as np
 import pandas as pd
+import numpy as np
 from PIL import Image
 from streamlit_lottie import st_lottie
 from projectcomponents import *
