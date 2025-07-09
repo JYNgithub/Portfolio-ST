@@ -52,7 +52,7 @@ with st.container():
     
     with pfp:
         image = Image.open('assets/pfp.png') # Load and display the image
-        st.image(image, use_column_width = True)
+        st.image(image, use_container_width = True)
         
 
     with intro:
