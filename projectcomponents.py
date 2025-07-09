@@ -158,7 +158,7 @@ projects = {
                     that sells computer hardware, including information on accounts, products, sales teams, and sales opportunities.  
                     """,
                     "resources": """
-                    Link to Dashboard: [Click here](https://public.tableau.com/shared/2WSST656K?:display_count=n&:origin=viz_share_link)
+                    Link to Dashboard: [Click here](https://public.tableau.com/views/MavenSalesChallenge2024/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
                     """,
                     "add_image1": "assets/salesd2.jpg",
                     "add_image2": "assets/salesd3.jpg",
@@ -183,7 +183,6 @@ projects = {
                     "main_image": "assets/scd1.png",
                     "description": "This is a dashboard built using R to analyze city data in terms of quality of life and sustainability. ",
                     "resources": """
-                    Link to GitHub: https://github.com/JYNgithub/sustainable-city-dashboard
                     
                     Dashboard Demo: https://www.youtube.com/watch?v=Z-Nlcof9QG4 (please skip to 1:58 for the demo)
 
@@ -193,9 +192,7 @@ projects = {
                     "add_image3": "assets/scd4.png",
                     "documentation": """
                     Note:\n
-                    This is a university group project and my first Rshiny projects 3 months into learning R. Admittedly, this project 
-                    was not optimized for shareability, so please refer to the YouTube video for a showcase of the dashboard.\n
-                    
+                    This is a university group project and my first Rshiny projects 3 months into learning R. Please refer to the YouTube video for a showcase of the dashboard.\n
                     1) Data Cleaning\n
                     Data cleaning was conducted in R by dropping irrelevant columns and removing rows with missing data.\n
                     2) Data Visualization\n
