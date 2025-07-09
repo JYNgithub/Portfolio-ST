@@ -183,9 +183,7 @@ projects = {
                     "main_image": "assets/scd1.png",
                     "description": "This is a dashboard built using R to analyze city data in terms of quality of life and sustainability. ",
                     "resources": """
-                    
                     Dashboard Demo: https://www.youtube.com/watch?v=Z-Nlcof9QG4 (please skip to 1:58 for the demo)
-
                     """,
                     "add_image1": "assets/scd2.png",
                     "add_image2": "assets/scd3.png",
