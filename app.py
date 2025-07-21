@@ -6,6 +6,10 @@ from PIL import Image
 from streamlit_lottie import st_lottie
 from projectcomponents import *
 
+######################################################
+# Configuration
+######################################################
+
 # Page configuration
 st.set_page_config(
     page_title = "Chong Jin Jye's Portfolio",
@@ -14,28 +18,27 @@ st.set_page_config(
     layout='wide'
 )
 
-# Page setup (may not be required)
-page_project1 = st.Page(
-    page = "pages/HospitalKPIDashboard.py"
-)
-
 # Load Font Awesome CSS
 st.markdown("""
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 """, unsafe_allow_html=True)
 
 # Load custom CSS
-def load_css():
-    with open('styles/style.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-load_css()
+with open('styles/style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+######################################################
+# Utility Functions
+######################################################
 
 # Load lottie animations
 def get_lottie(url):
     link = requests.get(url)
     return link.json()
-animation1 = get_lottie("https://lottie.host/f953eec0-8ae0-42d9-a367-cbcf62c3a048/Cja9RYcO4Q.json")
-animation2 = get_lottie("https://lottie.host/f6ca40d9-94eb-4400-b894-665f56d4b665/5OfYeb57Wz.json")
+
+######################################################
+# Page Layout
+######################################################
 
 # Container 1: Introduction 
 with st.container():
@@ -115,6 +118,7 @@ with st.container():
                  """)
         
     with animation: 
+        animation1 = get_lottie("https://lottie.host/f953eec0-8ae0-42d9-a367-cbcf62c3a048/Cja9RYcO4Q.json")
         st_lottie(animation1, width = 350)
         
 # Divider
@@ -132,6 +136,7 @@ with st.container():
         with div2:
             st.empty()
         with animation:
+            animation2 = get_lottie("https://lottie.host/f6ca40d9-94eb-4400-b894-665f56d4b665/5OfYeb57Wz.json")
             st_lottie(animation2, width = 350)
         with selectbox:
             st.header("List of Projects")
