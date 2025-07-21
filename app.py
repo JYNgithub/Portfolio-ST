@@ -140,13 +140,13 @@ with st.container():
         with selectbox:
             st.header("List of Projects")
             # Options for select box
-            options = ["Select all", "Python", "SQL", "Excel", "Power BI", "Tableau", "R"]
+            options = ["All", "Python", "SQL", "Excel", "Power BI", "Tableau", "R"]
             # Create the select box
-            selected_option = st.selectbox("x", options, label_visibility='hidden')
+            selected_option = st.selectbox("x", options, label_visibility='hidden', placeholder="Filter by skills", key="project_filter")
             
             
             # Project details from projectcomponents.py
-            if selected_option == "Select all":
+            if selected_option == "All":
                 for project_id, details in projects.items():
                     p1, p2 = st.columns([4,1])
                     with p1: 
