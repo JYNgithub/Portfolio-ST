@@ -1,7 +1,7 @@
 projects = {    
                 "project1": {
                     "title": "Automated Content Summarizer in Databricks",
-                    "tools_used": ["Databricks"],
+                    "tools_used": ["Python", "Databricks"],
                     "additional_skills": ["Artificial Intelligence", "Job automation"],
                     "icon": "📝",
                     "link": "pages/ContentSummarizerDatabricks.py",
@@ -23,8 +23,8 @@ projects = {
                 },
                 "project2": {
                     "title": "Automated Pipeline To Databricks Workspaces",
-                    "tools_used": ["Python"],
-                    "additional_skills": ["Databricks", "Prefect", "Data pipeline automation", "Cloud computing"],
+                    "tools_used": ["Python", "Databricks"],
+                    "additional_skills": ["Prefect", "Data pipeline automation", "Cloud computing"],
                     "icon": "🖇️",
                     "link": "pages/AutomatedPipelineToDatabricksWorkSpace.py",
                     "main_image": "assets/databrickworkspace0.png",
