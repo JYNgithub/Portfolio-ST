@@ -9,6 +9,8 @@ projects = {
                     "description": """
                     This is a fully cloud-based pipeline using Prefect Cloud to automate data pipelines to Databricks workspaces without any manual input. 
                     The project can be scaled to migrate large volumes of files into Databricks workspaces for development. 
+                    \n
+                    Note: A simple audio file is used as an example of source data, due to the fact that I am running the Free/Hobby Edition for both tools with clear limitations.
                     """,
                     "resources": """
                     - Link to GitHub: https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks
