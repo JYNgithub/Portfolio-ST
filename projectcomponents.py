@@ -7,8 +7,8 @@ projects = {
                     "link": "pages/AutomatedPipelineToDatabricksWorkSpace.py",
                     "main_image": "assets/databrickworkspace0.png",
                     "description": """
-                    This is a fully cloud-based pipeline using Prefect Cloud to automate data pipelines to Databricks workspaces without any manual input. 
-                    The project can be scaled to migrate large volumes of files into Databricks workspaces for development. 
+                    This is a fully cloud-based pipeline using **Prefect Cloud** to automate data pipelines to **Databricks** workspaces without any manual input. 
+                    The project can be scaled to migrate large volumes of files into **Databricks** workspaces for development. 
                     \n
                     Note: A simple audio file is used as an example of source data, due to the fact that I am running the Free/Hobby Edition for both tools with clear limitations.
                     """,
@@ -19,19 +19,19 @@ projects = {
                     "add_image2": "assets/databrickworkspace2.png",
                     "add_image3": "assets/databrickworkspace3.png",
                     "documentation": """
-                    1) Setting up Prefect Cloud\n
-                    Prefect Cloud is a cloud-based workflow management system that allows users to build, run and monitor automated data pipelines. Python scripts
-                    are used to set up the tasks and flows needed for the pipeline. Furthermore, a work pool is constructed to enable full automation on cloud. Prefect provides
-                    developers the ability to seperate code storage and execution, providing both flexibility and security. In this case, the project uses Prefect managed servers to run
+                    **1) Setting up Prefect Cloud**\n
+                    **Prefect Cloud** is a cloud-based workflow management system that allows users to build, run and monitor automated data pipelines. Python scripts
+                    are used to set up the tasks and flows needed for the pipeline. Furthermore, a work pool is constructed using a **prefect.yaml** file to enable full automation on cloud. **Prefect** provides
+                    developers the ability to seperate code storage and execution, providing both flexibility and security. In this case, the project uses **Prefect** managed servers to run
                     the pipeline.
                     
-                    2) GitHub Repository as Remote Code Storage\n
-                    Since Prefect does not store the code for the pipeline, a remote code storage is needed to run the pipeline on cloud. The project chooses GitHub repository 
+                    **2) GitHub Repository as Remote Code Storage**\n
+                    Since **Prefect** does not store the code for the pipeline, a remote code storage is needed to run the pipeline on cloud. The project chooses GitHub repository 
                     as the most straightforward option. Note that the repository can either be public, or private for security purposes. This option can change according to the needs of the organization.
                     
-                    3) Setting up Databricks Workspaces\n
-                    Databricks contains Workspaces which are essentially a cloud-based file system that allows users to store and manage files, notebooks, and other resources.
-                    For confidential information such as the Databricks token, the project stores it in a local .env file. But for production use, it is recommended to store the token in Prefect Secrets system.
+                    **3) Setting up Databricks Workspaces**\n
+                    **Databricks** contains **Workspaces** which are essentially a cloud-based file system that allows users to store and manage files, notebooks, and other resources.
+                    For confidential information such as the **Databricks Token**, the project stores it in a local .env file. But for production use, it is recommended to store the token in **Prefect Secrets** system.
                     """
                 },
                 "project2": {
