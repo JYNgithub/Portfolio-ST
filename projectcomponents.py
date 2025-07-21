@@ -13,9 +13,9 @@ projects = {
                     "resources": """
                     - Link to GitHub: https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks
                     """,
-                    "add_image1": "assets/https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks1.png",
-                    "add_image2": "assets/https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks2.png",
-                    "add_image3": "assets/https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks3.png",
+                    "add_image1": "assets/databrickworkspace0.png1.png",
+                    "add_image2": "assets/databrickworkspace0.png2.png",
+                    "add_image3": "assets/databrickworkspace0.png3.png",
                     "documentation": """
                     1) Setting up Prefect Cloud\n
                     Prefect Cloud is a cloud-based workflow management system that allows users to build, run and monitor automated data pipelines. Python scripts
