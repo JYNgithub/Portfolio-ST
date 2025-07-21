@@ -81,7 +81,6 @@ with st.container():
         )
         st.caption("Connect with me!")
 
-
 # Divider
 st.markdown('<div style="height: 100px;"></div>', unsafe_allow_html=True)
 st.markdown("---")
@@ -366,8 +365,6 @@ with st.container():
             else:
                 st.write("Please select an option.")
 
-
-    
     with st.container():
         div1, projects, div2 = st.columns([1,8,1])
         with div1:
