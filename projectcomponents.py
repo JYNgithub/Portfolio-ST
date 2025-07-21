@@ -1,5 +1,27 @@
 projects = {    
                 "project1": {
+                    "title": "Automated Content Summarizer in Databricks",
+                    "tools_used": ["Databricks"],
+                    "additional_skills": ["Artificial Intelligence", "Job automation"],
+                    "icon": "📝",
+                    "link": "pages/ContentSummarizerDatabricks.py",
+                    "main_image": "assets/databricks0.png",
+                    "description": """
+                    TBC
+                    """,
+                    "resources": """
+                    - Link to notebooks used: https://github.com/JYNgithub/Automated-Content-Summarizer-Databricks
+                    """,
+                    "add_image1": "assets/databricks3.png",
+                    "add_image2": "assets/databricks1.png",
+                    "add_image3": "assets/databricks2.png",
+                    "add_image4": "assets/databricks4.png",
+                    "add_image5": "assets/databricks5.png",
+                    "documentation": """
+                    TBC
+                    """
+                },
+                "project2": {
                     "title": "Automated Pipeline To Databricks Workspaces",
                     "tools_used": ["Python"],
                     "additional_skills": ["Databricks", "Prefect", "Data pipeline automation", "Cloud computing"],
@@ -34,7 +56,7 @@ projects = {
                     For confidential information such as the **Databricks Token**, the project stores it in a local .env file. But for production use, it is recommended to store the token in **Prefect Secrets** system.
                     """
                 },
-                "project2": {
+                "project3": {
                     "title": "iBilik.my Web Scraper",
                     "tools_used": ["Python"],
                     "additional_skills": ["ScrapeGraphAI", "Large Language Models (LLM)", "Artificial Intelligence"],
@@ -78,7 +100,7 @@ projects = {
                     be respected.
                     """
                 },
-                "project3": {
+                "project4": {
                     "title": "Hospital KPI Dashboard For Executives",
                     "tools_used": ["Power BI", "Python"],
                     "additional_skills": ["Power Query"],
@@ -128,7 +150,7 @@ projects = {
                     Query and it has become another alternative tool for my future projects whenever data cleaning or transformation is required.
                     """
                 },
-                "project4": {
+                "project5": {
                     "title": "Global Data Science and ML Salary Dashboard",
                     "tools_used": ["Python"],
                     "additional_skills": ["Plotly Dash"],
@@ -179,7 +201,7 @@ projects = {
                     For more information, please check out the dashboard!
                     """
                 },
-                "project5": {
+                "project6": {
                     "title": "Interactive Sales Dashboard For Managers",
                     "tools_used": ["Tableau", "Excel", "SQL"],
                     "additional_skills": ["-"],
@@ -209,7 +231,7 @@ projects = {
                     The dashboard is constructed using Tableau.
                     """
                 },
-                "project6": {
+                "project7": {
                     "title": "Sustainable City Dashboard",
                     "tools_used": ["R"],
                     "additional_skills": ["Rshiny", "Linear Regression", "Forecasting"],

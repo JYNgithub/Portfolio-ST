@@ -17,7 +17,7 @@ with st.container():
             st.switch_page('app.py')
 
 for project_id, details in projects.items():
-    if project_id == "project6": ### Update this
+    if project_id == "project7": ### Update this
         # Container for main image and title
         with st.container():
             div1, mainimage, div2, desc, div3 = st.columns(

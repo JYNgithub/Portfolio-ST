@@ -101,6 +101,7 @@ with st.container():
                 - Python
                 - SQL
                 - Excel
+                - Databricks
                 - Power BI
                 - Tableau
                 - R
@@ -140,7 +141,7 @@ with st.container():
         with selectbox:
             st.header("List of Projects")
             # Options for select box
-            options = ["All", "Python", "SQL", "Excel", "Power BI", "Tableau", "R"]
+            options = ["All", "Python", "SQL", "Databricks", "Excel", "Power BI", "Tableau", "R"]
             # Create the select box
             selected_option = st.selectbox("x", options, label_visibility='hidden', placeholder="Filter by skills", key="project_filter")
             
@@ -334,6 +335,37 @@ with st.container():
             elif selected_option == "R":
                 for project_id, details in projects.items():
                     if "R" in details["tools_used"]:
+                        p1, p2 = st.columns([4,1])
+                        with p1: 
+                            st.markdown(
+                                f"""
+                                <div class="row">
+                                    <div class="icon">{details['icon']}</div>
+                                    <div class="text-container">
+                                        <div class="title">{details['title']}</div>
+                                        <div class="tools">{', '.join(details['tools_used'])}</div>
+                                    </div>
+                                </div>
+                                """,
+                                unsafe_allow_html=True
+                            )
+                        with p2: 
+                            st.markdown(
+                                """
+                                <div class="divider"></div>
+                                """,
+                                unsafe_allow_html=True
+                            )
+                            if st.button(
+                                "Learn more",
+                                key = f"{project_id}",
+                                use_container_width=True
+                            ):
+                                st.switch_page(f"{details['link']}") 
+                        st.markdown('<div class="projectdiv"></div>', unsafe_allow_html=True)
+            elif selected_option == "Databricks":
+                for project_id, details in projects.items():
+                    if "Databricks" in details["tools_used"]:
                         p1, p2 = st.columns([4,1])
                         with p1: 
                             st.markdown(
