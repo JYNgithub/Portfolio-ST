@@ -5,7 +5,7 @@ projects = {
                     "additional_skills": ["Databricks", "Prefect", "Data pipeline automation", "Cloud computing"],
                     "icon": "🖇️",
                     "link": "pages/AutomatedPipelineToDatabricksWorkSpace.py",
-                    "main_image": "assets/databrickworkspace0.jpg",
+                    "main_image": "assets/databrickworkspace0.png",
                     "description": """
                     This is a fully cloud-based pipeline using Prefect Cloud to automate data pipelines to Databricks workspaces without any manual input. 
                     The project can be scaled to migrate large volumes of files into Databricks workspaces for development. 
@@ -13,8 +13,8 @@ projects = {
                     "resources": """
                     - Link to GitHub: https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks
                     """,
-                    "add_image1": "assets/https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks1.jpg",
-                    "add_image2": "assets/https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks2.jpg",
+                    "add_image1": "assets/https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks1.png",
+                    "add_image2": "assets/https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks2.png",
                     "add_image3": "assets/https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks3.png",
                     "documentation": """
                     1) Setting up Prefect Cloud\n
