@@ -50,9 +50,9 @@ for project_id, details in projects.items():
         
         # Container for additional images
         with st.container():
-            div1, addimg1, addimg2, addimg3, div2 = st.columns(
+            div1, addimg1, addimg2, addimg3, addimg4, div2 = st.columns(
                 [
-                    0.5,3,3,3,5
+                    0.5,3,3,3,3,5
                 ]
             )
             with div1:
@@ -68,6 +68,9 @@ for project_id, details in projects.items():
             with addimg3:
                 img3 = Image.open(f"{details['add_image3']}")
                 st.image(img3, use_container_width = True)
+            with addimg4:
+                img4 = Image.open(f"{details['add_image4']}")
+                st.image(img4, use_container_width = True)
             
         # Divider
         st.write("---")

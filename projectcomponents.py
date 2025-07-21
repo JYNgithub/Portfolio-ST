@@ -15,8 +15,7 @@ projects = {
                     "add_image1": "assets/databricks3.png",
                     "add_image2": "assets/databricks1.png",
                     "add_image3": "assets/databricks2.png",
-                    "add_image4": "assets/databricks4.png",
-                    "add_image5": "assets/databricks5.png",
+                    "add_image4": "assets/databricks5.png",
                     "documentation": """
                     TBC
                     """
