@@ -7,7 +7,10 @@ projects = {
                     "link": "pages/ContentSummarizerDatabricks.py",
                     "main_image": "assets/databricks0.png",
                     "description": """
-                    TBC
+                    This is an AI-driven content summarization pipeline in Databricks that transforms YouTube videos into readable insights. 
+                    The system extracts audio, transcribes it into text, and uses an AI model to generate summaries. 
+                    Everything runs through Databricks notebooks and is orchestrated using Jobs to automate the entire process.
+                    A key feature is that every part of the pipeline is on cloud, including the AI model, which is hosted on Databricks.
                     """,
                     "resources": """
                     - Link to notebooks used: https://github.com/JYNgithub/Automated-Content-Summarizer-Databricks
@@ -17,7 +20,16 @@ projects = {
                     "add_image3": "assets/databricks2.png",
                     "add_image4": "assets/databricks5.png",
                     "documentation": """
-                    TBC
+                    **1) Extract Youtube Audio**\n
+                    The script first extracts a YouTube video's audio using yt-dlp. It uses a cookies.txt file for authentication, which is required when running in a cloud environment.
+                    The best available audio stream is extracted and saved in .m4a format. 
+                    
+                    **2) Transcribe Audio to Text**\n
+                    The downloaded audio is then converted to a .wav file using ffmpeg to match the input requirements of the Whisper transcription model. This ensures consistent sample rate and format for accurate speech recognition.
+                    The Whisper model (base version) is used to transcribe the WAV audio file into text. A custom audio loading function replaces Whisper's default loader to improve compatibility with ffmpeg and ensure reliable decoding.
+
+                    **3) Content Summarization using AI**\n
+                    The transcribed text is sent to an AI model hosted on Databricks using the OpenAI client interface. The model receives a prompt asking for a summary that includes explanation and key points.
                     """
                 },
                 "project2": {
