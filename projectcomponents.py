@@ -246,7 +246,7 @@ projects = {
                     "title": "Data Engineer Jobs Analysis",
                     "tools_used": ["SQL"],
                     "additional_skills": ["PostgreSQL", "SQLTools (extension)", "Plotly"],
-                    "icon": "📊",
+                    "icon": "📈",
                     "link": "pages/SQLLukeBarousse.py",
                     "main_image": "assets/sqllb0.png",
                     "description": """
