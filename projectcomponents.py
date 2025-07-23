@@ -252,7 +252,7 @@ projects = {
                     "description": """
                     The project aims to provide insights into the data engineering job market using data visualizations.
                     The project showcases intermediate skills in SQL and Python, using PostgreSQL as the database and VS Code with SQLTools extension for database management.
-                    Partially guided by Luke Barousse's SQL for Data Analytics, the project is mostly my own work. 
+                    Partially guided by [Luke Barousse's SQL for Data Analytics](https://youtu.be/7mz73uXD9DA?si=xRTipzSlpzKb3has), the project is mostly my own work. 
                     """,
                     "resources": """
                     Link to GitHub: https://github.com/JYNgithub/Project-SQL-LukeBarousse
