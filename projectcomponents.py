@@ -244,7 +244,7 @@ projects = {
                 },
                 "project7": {
                     "title": "Data Engineer Jobs Analysis",
-                    "tools_used": ["SQL"],
+                    "tools_used": ["Python", "SQL"],
                     "additional_skills": ["PostgreSQL", "SQLTools (extension)", "Plotly"],
                     "icon": "📊",
                     "link": "pages/SQLLukeBarousse.py",
