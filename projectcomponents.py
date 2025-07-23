@@ -272,17 +272,17 @@ projects = {
                     5. The data is visualized using the Python library Plotly in the 'visualizations' folder.
 
                     **Findings**\n
-                    1. What is the typical hourly pay rate for a Data Engineer?
+                    1. What is the typical hourly pay rate for a Data Engineer?\n
                     A majority of Data Engineer roles pay for 52.5 - 57.5 USD per hour, followed by 57.5 - 62.5 and 62.5 - 67.5. 
                     This is much higher than the average hourly pay in the US of 28.2 - 35.5 USD according to news sources.
                     
-                    2. What are the top-paying jobs available for Data Engineers?
+                    2. What are the top-paying jobs available for Data Engineers?\n
                     Top paying jobs for Data Engineer roles can reach up to 117.50 USD per hour. Furthermore, half of the top paying jobs for Data Engineer roles does not specify requiring a degree in their job postings.
                     
-                    3. What are the top skill types based on salary for Data Engineers?
+                    3. What are the top skill types based on salary for Data Engineers?\n
                     To nobody's surprise, SQL and Python remain the most demanded skills among Data Engineer roles, which are fundamentals for building data pipelines and ensuring data integrity in any organization. Modern platforms with database services such as AWS and Azure should also be noted.
                     
-                    4. What are the most high-demand AND high-paying skills in the field of Data Engineering?
+                    4. What are the most high-demand AND high-paying skills in the field of Data Engineering?\n
                     It is observed that SQL and Python are the most demanded skills, but they are not the highest-paying skills.
                     In terms of demand, Azure and Spark are almost equal, but Spark offers more opportunities for higher paying jobs.
                     Another interesting point is Databricks, which is the highest paying skill yet low in demand. This could be because Databricks is still a new skill in the market, but is definitely acknowledge as employers are willing to pay a high amount for this expertise.
