@@ -175,7 +175,7 @@ projects = {
                     that is related to the distribution of salary such as experience level, company size and year. 
                     """,
                     "resources": """
-                    - Link to Dashboard (designed for desktop view only): https://global-salary-dashboard.onrender.com/ \n
+                    - As of August 2025, the dashboard is only available via local deployment and is no longer accessible online. This is to redirect my focus on newer projects instead. \n
                     - Link to GitHub: https://github.com/JYNgithub/global-salary-dashboard
                     """,
                     "add_image1": "assets/dsml2.png",
