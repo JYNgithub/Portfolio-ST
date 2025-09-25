@@ -33,11 +33,11 @@ projects = {
                     """
                 },
                 "project2": {
-                    "title": "Automated Pipeline To Databricks Workspaces",
-                    "tools_used": ["Python", "Databricks"],
-                    "additional_skills": ["Prefect", "Data pipeline automation", "Cloud computing"],
+                    "title": "Automated Pipeline On Prefect Cloud",
+                    "tools_used": ["Python", "Prefect"],
+                    "additional_skills": ["Databricks", "Data pipeline automation", "Cloud computing"],
                     "icon": "🖇️",
-                    "link": "pages/AutomatedPipelineToDatabricksWorkSpace.py",
+                    "link": "pages/AutomatedPipelineOnPrefectCloud.py",
                     "main_image": "assets/databrickworkspace0.png",
                     "description": """
                     This is a fully cloud-based pipeline using **Prefect Cloud** to automate data pipelines to **Databricks** workspaces without any manual input. 
@@ -46,7 +46,7 @@ projects = {
                     Note: A simple audio file is used as an example of source data, due to the fact that I am running the Free/Hobby Edition for both tools with clear limitations.
                     """,
                     "resources": """
-                    - Link to GitHub: https://github.com/JYNgithub/Automated-Pipeline-To-DataBricks
+                    - Link to GitHub: https://github.com/JYNgithub/Automated-Pipeline-On-Prefect-Cloud
                     """,
                     "add_image1": "assets/databrickworkspace1.png",
                     "add_image2": "assets/databrickworkspace2.png",
