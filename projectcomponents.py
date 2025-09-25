@@ -34,8 +34,8 @@ projects = {
                 },
                 "project2": {
                     "title": "Automated Pipeline On Prefect Cloud",
-                    "tools_used": ["Python", "Prefect"],
-                    "additional_skills": ["Databricks", "Data pipeline automation", "Cloud computing"],
+                    "tools_used": ["Python", "Databricks"],
+                    "additional_skills": ["Prefect", "Data pipeline automation", "Cloud computing"],
                     "icon": "🖇️",
                     "link": "pages/AutomatedPipelineOnPrefectCloud.py",
                     "main_image": "assets/databrickworkspace0.png",
