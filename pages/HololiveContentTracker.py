@@ -63,11 +63,9 @@ for project_id, details in projects.items():
                 img1 = Image.open(f"{details['add_image1']}")
                 st.image(img1, use_container_width = True)
             with addimg2:
-                img2 = Image.open(f"{details['add_image2']}")
-                st.image(img2, use_container_width = True)
+                st.empty()
             with addimg3:
-                img3 = Image.open(f"{details['add_image3']}")
-                st.image(img3, use_container_width = True)
+                st.empty()
             
         # Divider
         st.write("---")

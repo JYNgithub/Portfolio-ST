@@ -78,32 +78,33 @@ projects = {
                     Not the 1000th PDF or document chatbot.
                     DocsReader is a chatbot designed to be your learning partner for up to 13 Python libraries, using official documentation as its source.
 
-                    Can it build your whole project with one prompt? No
-                    Can it help you learn new tools with accurate syntax and information? Yes
+                    - Can it build your whole project with one prompt? No\n
+                    - Can it help you learn new tools with accurate syntax and information? Yes
                     """,
                     "resources": """
                     GitHub Link: https://github.com/JYNgithub/Docs-Reader-AI-Chatbot
                     """,
                     "add_image1": "assets/docsai2.png",
                     "add_image2": "assets/docsai3.png",
+                    "add_image3": "  ",
                     "documentation": """
                     How it works:\n
                     Official documentations of Python libraries are scraped as vector embeddings to be used in Retrieval-Augmented Generation (RAG) for the AI chatbot. Meaning, the chatbot receives accurate information to prevent hallucination.
                     As latest Python libraries are updated frequently, mainstream chatbots like ChatGPT are prone to give outdated and deprecated code suggestions due to their slow updates. This chatbot solves this problems by directly scraping official documentation, without having to rely on inconsistent Web Search feature by other coding assistants.
-                    
+                    \n
                     Supported libraries:\n
-                    Chroma
-                    Pillow
-                    PySpark
-                    Transformers
-                    Tokenizers
-                    Gradio
-                    FastAPI
-                    Psycopg2
-                    Psycopg3
-                    Redis
-                    SQLAlchemy
-                    DataBricks-SDK
+                    Chroma,
+                    Pillow,
+                    PySpark,
+                    Transformers,
+                    Tokenizers,
+                    Gradio,
+                    FastAPI,
+                    Psycopg2,
+                    Psycopg3,
+                    Redis,
+                    SQLAlchemy,
+                    DataBricks-SDK,
                     NiceGUI
                     """
                 },
@@ -124,6 +125,8 @@ projects = {
                     The site currently only supports desktop use. Automatically updates every hour.
                     """,
                     "add_image1": "assets/holo2.png",
+                    "add_image2": "  ",
+                    "add_image3": "  ",
                     "documentation": """
                     What it does:\n
                     1. Shows upcoming scheduled streams/content for each talent with thumbnails and details
