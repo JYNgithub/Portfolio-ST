@@ -17,7 +17,7 @@ with st.container():
             st.switch_page('app.py')
 
 for project_id, details in projects.items():
-    if project_id == "project9": ### Update this
+    if project_id == "project4": ### Update this
         # Container for main image and title
         with st.container():
             div1, mainimage, div2, desc, div3 = st.columns(
@@ -50,9 +50,9 @@ for project_id, details in projects.items():
         
         # Container for additional images
         with st.container():
-            div1, addimg1, addimg2, addimg3, addimg4, div2 = st.columns(
+            div1, addimg1, addimg2, addimg3, div2 = st.columns(
                 [
-                    0.5,3,3,3,3,5
+                    0.5,3,3,3,5
                 ]
             )
             with div1:
@@ -68,9 +68,6 @@ for project_id, details in projects.items():
             with addimg3:
                 img3 = Image.open(f"{details['add_image3']}")
                 st.image(img3, use_container_width = True)
-            with addimg4:
-                img4 = Image.open(f"{details['add_image4']}")
-                st.image(img4, use_container_width = True)
             
         # Divider
         st.write("---")

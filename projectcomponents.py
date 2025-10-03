@@ -68,6 +68,77 @@ projects = {
                     """
                 },
                 "project3": {
+                    "title": "DocsReader AI Chatbot",
+                    "tools_used": ["Python"],
+                    "additional_skills": ["Web Scraping", "Playwright", "Vector Database", "ChromaDB", "RAG", "Streamlit"],
+                    "icon": "📄",
+                    "link": "pages/DocsReader.py",
+                    "main_image": "assets/docsai1.png",
+                    "description": """
+                    Not the 1000th PDF or document chatbot.
+                    DocsReader is a chatbot designed to be your learning partner for up to 13 Python libraries, using official documentation as its source.
+
+                    Can it build your whole project with one prompt? No
+                    Can it help you learn new tools with accurate syntax and information? Yes
+                    """,
+                    "resources": """
+                    GitHub Link: https://github.com/JYNgithub/Docs-Reader-AI-Chatbot
+                    """,
+                    "add_image1": "assets/docsai2.png",
+                    "add_image2": "assets/docsai3.png",
+                    "documentation": """
+                    How it works:\n
+                    Official documentations of Python libraries are scraped as vector embeddings to be used in Retrieval-Augmented Generation (RAG) for the AI chatbot. Meaning, the chatbot receives accurate information to prevent hallucination.
+                    As latest Python libraries are updated frequently, mainstream chatbots like ChatGPT are prone to give outdated and deprecated code suggestions due to their slow updates. This chatbot solves this problems by directly scraping official documentation, without having to rely on inconsistent Web Search feature by other coding assistants.
+                    
+                    Supported libraries:\n
+                    Chroma
+                    Pillow
+                    PySpark
+                    Transformers
+                    Tokenizers
+                    Gradio
+                    FastAPI
+                    Psycopg2
+                    Psycopg3
+                    Redis
+                    SQLAlchemy
+                    DataBricks-SDK
+                    NiceGUI
+                    """
+                },
+                "project4": {
+                    "title": "Hololive Content Tracker",
+                    "tools_used": ["Python"],
+                    "additional_skills": ["Web Scraping", "Selenium", "Cloud Database", "Neon", "NiceGUI"],
+                    "icon": "⚙️",
+                    "link": "pages/HololiveContentTracker.py",
+                    "main_image": "assets/holo1.png",
+                    "description": """
+                    This is Hololive Content Tracker - a web application that monitors and displays upcoming content from Hololive talents, owned by Cover Corp.\n
+                    Cover Corp is a next-generation entertainment enterprise that shares content to the rest of the world by utilizing cutting-edge technologies such as VR.
+                    """,
+                    "resources": """
+                    Link: https://hololive-content-tracker.onrender.com/
+
+                    The site currently only supports desktop use. Automatically updates every hour.
+                    """,
+                    "add_image1": "assets/holo2.png",
+                    "documentation": """
+                    What it does:\n
+                    1. Shows upcoming scheduled streams/content for each talent with thumbnails and details
+                    2. Tracks livestream analytics (duration, views, likes, comments) from the past 7 days
+                    3. Indicates which talents have upcoming content with a live indicator
+                    4. Provides clickable links to YouTube streams and talent pages
+                    \n
+                    Key features:\n
+                    1. Real-time updates: Automatically scrapes the official Hololive website hourly to get the latest scheduled content
+                    2. Analytics tracking: Uses YouTube API to gather performance data from recent livestreams
+                    3. Always current: Automated data collection via GitHub Actions to keep information updated
+
+                    """
+                },
+                "project5": {
                     "title": "iBilik.my Web Scraper",
                     "tools_used": ["Python"],
                     "additional_skills": ["ScrapeGraphAI", "Large Language Models (LLM)", "Artificial Intelligence"],
@@ -111,7 +182,7 @@ projects = {
                     be respected.
                     """
                 },
-                "project4": {
+                "project6": {
                     "title": "Hospital KPI Dashboard For Executives",
                     "tools_used": ["Power BI", "Python"],
                     "additional_skills": ["Power Query"],
@@ -161,7 +232,7 @@ projects = {
                     Query and it has become another alternative tool for my future projects whenever data cleaning or transformation is required.
                     """
                 },
-                "project5": {
+                "project7": {
                     "title": "Global Data Science and ML Salary Dashboard",
                     "tools_used": ["Python"],
                     "additional_skills": ["Plotly Dash"],
@@ -212,7 +283,7 @@ projects = {
                     For more information, please check out the dashboard!
                     """
                 },
-                "project6": {
+                "project8": {
                     "title": "Interactive Sales Dashboard For Managers",
                     "tools_used": ["Tableau", "Excel", "SQL"],
                     "additional_skills": ["-"],
@@ -242,7 +313,7 @@ projects = {
                     The dashboard is constructed using Tableau.
                     """
                 },
-                "project7": {
+                "project9": {
                     "title": "Data Engineer Jobs Analysis",
                     "tools_used": ["SQL"],
                     "additional_skills": ["PostgreSQL", "SQLTools (extension)", "Plotly"],
@@ -288,7 +359,7 @@ projects = {
                     Another interesting point is Databricks, which is the highest paying skill yet low in demand. This could be because Databricks is still a new skill in the market, but is definitely acknowledge as employers are willing to pay a high amount for this expertise.
                     """
                 },
-                "project8": {
+                "project10": {
                     "title": "Sustainable City Dashboard",
                     "tools_used": ["R"],
                     "additional_skills": ["Rshiny", "Linear Regression", "Forecasting"],
@@ -317,5 +388,6 @@ projects = {
                     Forecasting is done in R using the 'forecast' library.
 
                     """
-                }
+                },
+
             }
