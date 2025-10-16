@@ -37,7 +37,7 @@ projects = {
                     "tools_used": ["Python"],
                     "additional_skills": ["Hadoop", "PySpark", "Linux (Ubuntu)", "Medallion Architecture"],
                     "icon": "⭐",
-                    "link": "pages/SelfHostedUbuntu.py",
+                    "link": "pages/SelfHostedHadoop.py",
                     "main_image": "assets/hadoop4.png",
                     "description": """
                     Self-hosted a Hadoop and Spark cluster on Ubuntu and securely extracted data to Windows via SSH to convert data into value 
