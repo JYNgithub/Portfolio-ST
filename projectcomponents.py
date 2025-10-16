@@ -33,6 +33,58 @@ projects = {
                     """
                 },
                 "project2": {
+                    "title": "Self-Hosted Hadoop Spark Cluster on Ubuntu",
+                    "tools_used": ["Python"],
+                    "additional_skills": ["Hadoop", "PySpark", "Linux (Ubuntu)", "Medallion Architecture"],
+                    "icon": "⭐",
+                    "link": "pages/SelfHostedUbuntu.py",
+                    "main_image": "assets/hadoop4.png",
+                    "description": """
+                    Self-hosted a Hadoop and Spark cluster on Ubuntu and securely extracted data to Windows via SSH to convert data into value 
+                    """,
+                    "resources": """
+                    - Link to GitHub: https://github.com/JYNgithub/Self-Host-Hadoop-Spark-Ubuntu
+                    """,
+                    "add_image1": "assets/hadoop1.png",
+                    "add_image2": "assets/hadoop2.png",
+                    "add_image3": "assets/hadoop3.png",
+                    "documentation": """
+                    **1. Virtual Machine Setup**\n
+                    Installed VMware Workstation Pro on Windows as the virtualization platform.\n
+                    Created a new Ubuntu virtual machine and configured system resources (CPU, memory, and disk).\n
+                    Installed essential tools and dependencies:\n
+                    - Python\n
+                    - VS Code\n
+                    - PostgreSQL\n
+                    Verified environment stability and networking within the VM.\n
+                    **2. Hadoop and PySpark Environment Setup**\n
+                    Installed Java JDK, ensuring compatibility with Hadoop and PySpark versions.\n
+                    Downloaded and configured Hadoop:\n
+                    - core-site.xml\n
+                    - hdfs-site.xml\n
+                    - yarn-site.xml\n
+                    Set up the NameNode and DataNode directories.\n
+                    Formatted the NameNode and launched the HDFS cluster.\n
+                    Configured YARN for resource management.\n
+                    Installed and integrated PySpark with Hadoop, ensuring correct environment variables (JAVA_HOME, HADOOP_HOME, SPARK_HOME) were set.\n
+                    Validated setup by running sample PySpark jobs on HDFS.\n
+                    **3. Enabling Remote Access**\n
+                    Enabled SSH service in Ubuntu to allow secure terminal access to the VM.\n
+                    Configured port forwarding to ensure external access to the VM if required.\n
+                    **4. Implementing the Medallion Architecture**\n
+                    Data processing followed a structured Bronze–Silver–Gold model to ensure quality, scalability, and traceability.\n
+                    - Bronze Layer (Raw Data) -> Silver Layer (Refined Data) -> Gold Layer (Business-Ready Data)
+                    **5. PostgreSQL Data Marts**\n
+                    Installed and configured PostgreSQL within the Ubuntu environment.\n
+                    Created schemas and tables representing the Gold Layer outputs.\n
+                    Loaded curated CSV datasets into PostgreSQL.\n
+                    Optimized tables with indexing and basic normalization for efficient querying.\n
+                    **6. Analytics and Data Access**\n
+                    From the Windows host machine, established a secure connection to PostgreSQL using an SSH Tunnel.\n
+                    Connected via Python using the psycopg2 library and extracted data for further use.\n
+                    """
+                },
+                "project3": {
                     "title": "Automated Pipeline On Prefect Cloud",
                     "tools_used": ["Python", "Databricks"],
                     "additional_skills": ["Prefect", "Data pipeline automation", "Cloud computing"],
@@ -67,7 +119,7 @@ projects = {
                     For confidential information such as the **Databricks Token**, the project stores it in a local .env file. But for production use, it is recommended to store the token in **Prefect Secrets** system.
                     """
                 },
-                "project3": {
+                "project4": {
                     "title": "DocsReader AI Chatbot",
                     "tools_used": ["Python"],
                     "additional_skills": ["Web Scraping", "Playwright", "Vector Database", "ChromaDB", "RAG", "Streamlit"],
@@ -108,7 +160,7 @@ projects = {
                     NiceGUI
                     """
                 },
-                "project4": {
+                "project5": {
                     "title": "Hololive Content Tracker",
                     "tools_used": ["Python"],
                     "additional_skills": ["Web Scraping", "Selenium", "Cloud Database", "Neon", "NiceGUI"],
@@ -141,7 +193,7 @@ projects = {
 
                     """
                 },
-                "project5": {
+                "project6": {
                     "title": "iBilik.my Web Scraper",
                     "tools_used": ["Python"],
                     "additional_skills": ["ScrapeGraphAI", "Large Language Models (LLM)", "Artificial Intelligence"],
@@ -185,7 +237,7 @@ projects = {
                     be respected.
                     """
                 },
-                "project6": {
+                "project7": {
                     "title": "Hospital KPI Dashboard For Executives",
                     "tools_used": ["Power BI", "Python"],
                     "additional_skills": ["Power Query"],
@@ -235,7 +287,7 @@ projects = {
                     Query and it has become another alternative tool for my future projects whenever data cleaning or transformation is required.
                     """
                 },
-                "project7": {
+                "project8": {
                     "title": "Global Data Science and ML Salary Dashboard",
                     "tools_used": ["Python"],
                     "additional_skills": ["Plotly Dash"],
@@ -286,7 +338,7 @@ projects = {
                     For more information, please check out the dashboard!
                     """
                 },
-                "project8": {
+                "project9": {
                     "title": "Interactive Sales Dashboard For Managers",
                     "tools_used": ["Tableau", "Excel", "SQL"],
                     "additional_skills": ["-"],
@@ -316,7 +368,7 @@ projects = {
                     The dashboard is constructed using Tableau.
                     """
                 },
-                "project9": {
+                "project10": {
                     "title": "Data Engineer Jobs Analysis",
                     "tools_used": ["SQL"],
                     "additional_skills": ["PostgreSQL", "SQLTools (extension)", "Plotly"],
@@ -362,7 +414,7 @@ projects = {
                     Another interesting point is Databricks, which is the highest paying skill yet low in demand. This could be because Databricks is still a new skill in the market, but is definitely acknowledge as employers are willing to pay a high amount for this expertise.
                     """
                 },
-                "project10": {
+                "project11": {
                     "title": "Sustainable City Dashboard",
                     "tools_used": ["R"],
                     "additional_skills": ["Rshiny", "Linear Regression", "Forecasting"],
@@ -392,5 +444,4 @@ projects = {
 
                     """
                 },
-
             }

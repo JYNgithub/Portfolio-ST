@@ -17,7 +17,7 @@ with st.container():
             st.switch_page('app.py')
 
 for project_id, details in projects.items():
-    if project_id == "project9": ### Update this
+    if project_id == "project2": ### Update this
         # Container for main image and title
         with st.container():
             div1, mainimage, div2, desc, div3 = st.columns(
@@ -31,7 +31,7 @@ for project_id, details in projects.items():
             with mainimage:
                 st.markdown('<div style="height: 20px;"></div>', unsafe_allow_html=True)
                 mainimage = Image.open(f"{details['main_image']}")
-                st.image(mainimage, use_container_width = True)
+                st.image(mainimage, use_column_width = True)
             
             with div2: 
                 st.empty()
@@ -61,12 +61,13 @@ for project_id, details in projects.items():
                 st.empty()
             with addimg1:
                 img1 = Image.open(f"{details['add_image1']}")
-                st.image(img1, use_container_width = True)
+                st.image(img1, use_column_width = True)
             with addimg2:
                 img2 = Image.open(f"{details['add_image2']}")
-                st.image(img2, use_container_width = True)
+                st.image(img2, use_column_width = True)
             with addimg3:
-                st.empty()
+                img3 = Image.open(f"{details['add_image3']}")
+                st.image(img3, use_column_width = True)
             
         # Divider
         st.write("---")
