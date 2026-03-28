@@ -14,7 +14,7 @@ except requests.exceptions.RequestException as e:
 
 # Simulate user activity
 with sync_playwright() as p:
-    browser = p.chromium.launch(headless=False)
+    browser = p.chromium.launch(headless=True)
     agent = browser.new_context(
         user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         viewport={"width": 1280, "height": 720},
@@ -32,5 +32,6 @@ with sync_playwright() as p:
     #     page.evaluate(f"window.scrollBy(0, {random.randint(300, 600)})")
     #     time.sleep(random.uniform(0.5, 1.5))
 
+    time.sleep(5)
     print("Done keep awake for ", page.title())
     browser.close()
