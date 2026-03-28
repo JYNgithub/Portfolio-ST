@@ -1,35 +1,43 @@
 projects = {    
                 "project1": {
-                    "title": "Automated Content Summarizer in Databricks",
-                    "tools_used": ["Python", "Databricks"],
-                    "additional_skills": ["Artificial Intelligence", "Job automation"],
-                    "icon": "📝",
-                    "link": "pages/ContentSummarizerDatabricks.py",
-                    "main_image": "assets/databricks0.png",
+                    "title": "DocsReader AI Chatbot",
+                    "tools_used": ["Python"],
+                    "additional_skills": ["Web Scraping", "Playwright", "Vector Database", "ChromaDB", "RAG", "Streamlit"],
+                    "icon": "📄",
+                    "link": "pages/DocsReader.py",
+                    "main_image": "assets/docsai1.png",
                     "description": """
-                    This is an AI-driven content summarization pipeline in Databricks that transforms YouTube videos into readable insights. 
-                    The system extracts audio, transcribes it into text, and uses an AI model to generate summaries. 
-                    Everything runs through Databricks notebooks and is orchestrated using Jobs to automate the entire process.
-                    A key feature is that every part of the pipeline is on cloud, including the AI model, which is hosted on Databricks.
+                    Not the 1000th PDF or document chatbot.
+                    DocsReader is a chatbot designed to be your learning partner for up to 13 Python libraries, using official documentation as its source.
+
+                    - Can it build your whole project with one prompt? No\n
+                    - Can it help you learn new tools with accurate syntax and information? Yes
                     """,
                     "resources": """
-                    - Link to notebooks used: https://github.com/JYNgithub/Automated-Content-Summarizer-Databricks
+                    GitHub Link: https://github.com/JYNgithub/Docs-Reader-AI-Chatbot
                     """,
-                    "add_image1": "assets/databricks3.png",
-                    "add_image2": "assets/databricks1.png",
-                    "add_image3": "assets/databricks2.png",
-                    "add_image4": "assets/databricks5.png",
+                    "add_image1": "assets/docsai2.png",
+                    "add_image2": "assets/docsai3.png",
+                    "add_image3": "  ",
                     "documentation": """
-                    **1) Extract Youtube Audio**\n
-                    The script first extracts a YouTube video's audio using yt-dlp. It uses a cookies.txt file for authentication, which is required when running in a cloud environment.
-                    The best available audio stream is extracted and saved in .m4a format. 
-                    
-                    **2) Transcribe Audio to Text**\n
-                    The downloaded audio is then converted to a .wav file using ffmpeg to match the input requirements of the Whisper transcription model. This ensures consistent sample rate and format for accurate speech recognition.
-                    The Whisper model (base version) is used to transcribe the WAV audio file into text. A custom audio loading function replaces Whisper's default loader to improve compatibility with ffmpeg and ensure reliable decoding.
-
-                    **3) Content Summarization using AI**\n
-                    The transcribed text is sent to an AI model hosted on Databricks using the OpenAI client interface. The model receives a prompt asking for a summary that includes explanation and key points.
+                    How it works:\n
+                    Official documentations of Python libraries are scraped as vector embeddings to be used in Retrieval-Augmented Generation (RAG) for the AI chatbot. Meaning, the chatbot receives accurate information to prevent hallucination.
+                    As latest Python libraries are updated frequently, mainstream chatbots like ChatGPT are prone to give outdated and deprecated code suggestions due to their slow updates. This chatbot solves this problems by directly scraping official documentation, without having to rely on inconsistent Web Search feature by other coding assistants.
+                    \n
+                    Supported libraries:\n
+                    Chroma,
+                    Pillow,
+                    PySpark,
+                    Transformers,
+                    Tokenizers,
+                    Gradio,
+                    FastAPI,
+                    Psycopg2,
+                    Psycopg3,
+                    Redis,
+                    SQLAlchemy,
+                    DataBricks-SDK,
+                    NiceGUI
                     """
                 },
                 "project2": {
@@ -120,47 +128,6 @@ projects = {
                     """
                 },
                 "project4": {
-                    "title": "DocsReader AI Chatbot",
-                    "tools_used": ["Python"],
-                    "additional_skills": ["Web Scraping", "Playwright", "Vector Database", "ChromaDB", "RAG", "Streamlit"],
-                    "icon": "📄",
-                    "link": "pages/DocsReader.py",
-                    "main_image": "assets/docsai1.png",
-                    "description": """
-                    Not the 1000th PDF or document chatbot.
-                    DocsReader is a chatbot designed to be your learning partner for up to 13 Python libraries, using official documentation as its source.
-
-                    - Can it build your whole project with one prompt? No\n
-                    - Can it help you learn new tools with accurate syntax and information? Yes
-                    """,
-                    "resources": """
-                    GitHub Link: https://github.com/JYNgithub/Docs-Reader-AI-Chatbot
-                    """,
-                    "add_image1": "assets/docsai2.png",
-                    "add_image2": "assets/docsai3.png",
-                    "add_image3": "  ",
-                    "documentation": """
-                    How it works:\n
-                    Official documentations of Python libraries are scraped as vector embeddings to be used in Retrieval-Augmented Generation (RAG) for the AI chatbot. Meaning, the chatbot receives accurate information to prevent hallucination.
-                    As latest Python libraries are updated frequently, mainstream chatbots like ChatGPT are prone to give outdated and deprecated code suggestions due to their slow updates. This chatbot solves this problems by directly scraping official documentation, without having to rely on inconsistent Web Search feature by other coding assistants.
-                    \n
-                    Supported libraries:\n
-                    Chroma,
-                    Pillow,
-                    PySpark,
-                    Transformers,
-                    Tokenizers,
-                    Gradio,
-                    FastAPI,
-                    Psycopg2,
-                    Psycopg3,
-                    Redis,
-                    SQLAlchemy,
-                    DataBricks-SDK,
-                    NiceGUI
-                    """
-                },
-                "project5": {
                     "title": "Hololive Content Tracker",
                     "tools_used": ["Python"],
                     "additional_skills": ["Web Scraping", "Selenium", "Cloud Database", "Neon", "NiceGUI"],
@@ -191,6 +158,39 @@ projects = {
                     2. Analytics tracking: Uses YouTube API to gather performance data from recent livestreams
                     3. Always current: Automated data collection via GitHub Actions to keep information updated
 
+                    """
+                },
+                "project5": {
+                    "title": "Automated Content Summarizer in Databricks",
+                    "tools_used": ["Python", "Databricks"],
+                    "additional_skills": ["Artificial Intelligence", "Job automation"],
+                    "icon": "📝",
+                    "link": "pages/ContentSummarizerDatabricks.py",
+                    "main_image": "assets/databricks0.png",
+                    "description": """
+                    This is an AI-driven content summarization pipeline in Databricks that transforms YouTube videos into readable insights. 
+                    The system extracts audio, transcribes it into text, and uses an AI model to generate summaries. 
+                    Everything runs through Databricks notebooks and is orchestrated using Jobs to automate the entire process.
+                    A key feature is that every part of the pipeline is on cloud, including the AI model, which is hosted on Databricks.
+                    """,
+                    "resources": """
+                    - Link to notebooks used: https://github.com/JYNgithub/Automated-Content-Summarizer-Databricks
+                    """,
+                    "add_image1": "assets/databricks3.png",
+                    "add_image2": "assets/databricks1.png",
+                    "add_image3": "assets/databricks2.png",
+                    "add_image4": "assets/databricks5.png",
+                    "documentation": """
+                    **1) Extract Youtube Audio**\n
+                    The script first extracts a YouTube video's audio using yt-dlp. It uses a cookies.txt file for authentication, which is required when running in a cloud environment.
+                    The best available audio stream is extracted and saved in .m4a format. 
+                    
+                    **2) Transcribe Audio to Text**\n
+                    The downloaded audio is then converted to a .wav file using ffmpeg to match the input requirements of the Whisper transcription model. This ensures consistent sample rate and format for accurate speech recognition.
+                    The Whisper model (base version) is used to transcribe the WAV audio file into text. A custom audio loading function replaces Whisper's default loader to improve compatibility with ffmpeg and ensure reliable decoding.
+
+                    **3) Content Summarization using AI**\n
+                    The transcribed text is sent to an AI model hosted on Databricks using the OpenAI client interface. The model receives a prompt asking for a summary that includes explanation and key points.
                     """
                 },
                 "project6": {
