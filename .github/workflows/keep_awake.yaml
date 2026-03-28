@@ -1,4 +1,4 @@
-name: Keep Alive
+name: Keep Awake
 
 on:
   schedule:
@@ -7,13 +7,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  ping:
-    # Version for ubuntu and playwright are specified for consistency
+  checkout:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
 
-      # Cache if possible
+  install:
+    runs-on: ubuntu-22.04
+    needs: checkout
+    steps:
       - name: Cache Playwright
         uses: actions/cache@v3
         with:
@@ -25,5 +27,17 @@ jobs:
           pip install requests playwright==1.58.0
           playwright install chromium
 
+  run:
+    runs-on: ubuntu-22.04
+    needs: install
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore Playwright cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-1.58.0
+
       - name: Run keep alive
-        run: python etc/keepalive.py
+        run: python etc/keep_awake.py
