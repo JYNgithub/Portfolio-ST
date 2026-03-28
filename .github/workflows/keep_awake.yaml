@@ -6,16 +6,21 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   checkout:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
 
-  install:
+  run:
     runs-on: ubuntu-22.04
     needs: checkout
     steps:
+      - uses: actions/checkout@v4
+
       - name: Cache Playwright
         uses: actions/cache@v3
         with:
@@ -26,18 +31,6 @@ jobs:
         run: |
           pip install requests playwright==1.58.0
           playwright install chromium
-
-  run:
-    runs-on: ubuntu-22.04
-    needs: install
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Restore Playwright cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-chromium-1.58.0
 
       - name: Run keep alive
         run: python etc/keep_awake.py
