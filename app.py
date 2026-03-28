@@ -100,8 +100,8 @@ with st.container():
         st.write("""
                 - Python
                 - SQL
-                - Excel
                 - Databricks
+                - AWS
                 - Power BI
                 - Tableau
                 - R
@@ -110,6 +110,8 @@ with st.container():
     with certs:
         st.header("Certifications & Achievements")
         st.write("""
+                 - Pearson Hadoop and Spark Fundamentals Specialization [(Link)](https://www.coursera.org/account/accomplishments/specialization/ZPCTFK3N5RGB)
+                 - AWS Cloud Solutions Architect [(Link)](https://www.coursera.org/account/accomplishments/professional-cert/GXYP2X3QAS86)
                  - Google Advanced Data Analytics Specialization [(Link)](https://www.coursera.org/account/accomplishments/specialization/52WEGE3U5AAH)
                  - Google Data Analytics Specialization [(Link)](https://www.coursera.org/account/accomplishments/specialization/UB3Z943YTLNG)
                  - ASEAN Data Science Explorer 2024, Participant
@@ -130,14 +132,14 @@ st.markdown('<div style="height: 25px;"></div>', unsafe_allow_html=True)
 with st.container():
 
     with st.container():
-        div1, animation, selectbox, div2 = st.columns([1,3,5,1])
+        div1, selectbox, div2 = st.columns([1,5,1])
         with div1: 
             st.empty()  
         with div2:
             st.empty()
-        with animation:
-            animation2 = get_lottie("https://lottie.host/f6ca40d9-94eb-4400-b894-665f56d4b665/5OfYeb57Wz.json")
-            st_lottie(animation2, width = 350)
+        # with animation:
+        #     animation2 = get_lottie("https://lottie.host/f6ca40d9-94eb-4400-b894-665f56d4b665/5OfYeb57Wz.json")
+        #     st_lottie(animation2, width = 350)
         with selectbox:
             st.header("List of Projects")
             # Options for select box
